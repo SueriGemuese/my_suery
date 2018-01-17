@@ -158,8 +158,8 @@ ORGANISATION_ADDRESS = {"name":"Gartenkooperative Süri",
             "extra" : "Address Extra"}
 ORGANISATION_BANK_CONNECTION = {"PC" : "61-227619-9",
             "IBAN" : "CH04 0900 0000 6122 7619 9",
-            "BIC" : "folgt noch",
-            "NAME" : "folgt noch",
+            "BIC" : "POFICHBEXXX",
+            "NAME" : "PostFinance",
             "ESR" : "ESR Number"}
 INFO_EMAIL = "info@sueri.org"
 SERVER_URL = "sueri.org"
