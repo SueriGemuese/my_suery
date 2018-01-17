@@ -126,7 +126,7 @@ if DEBUG is True:
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_URL = '/static/'
 
-IMPERSONATE_REDIRECT_URL = "/my/profil"
+IMPERSONATE_REDIRECT_URL = "/my/profile"
 
 LOGIN_REDIRECT_URL = "/my/home"
 
