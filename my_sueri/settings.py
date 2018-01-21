@@ -155,7 +155,7 @@ ORGANISATION_ADDRESS = {"name":"Gartenkooperative Süri...",
             "number" : "54",
             "zip" : "3204",
             "city" : "Rosshäusern",
-            "extra" : "Address Extra"}
+            "extra" : ""}
 ORGANISATION_BANK_CONNECTION = {"PC" : "61-227619-9",
             "IBAN" : "CH04 0900 0000 6122 7619 9",
             "BIC" : "POFICHBEXXX",
