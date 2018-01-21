@@ -149,7 +149,7 @@ MEMBERS_STRING = "Mitglieder"
 ASSIGNMENT_STRING = "Mitglied"
 ASSIGNMENTS_STRING = "Arbeitseinsätze"
 ORGANISATION_NAME = "Gartenkooperative Süri."
-ORGANISATION_LONG_NAME = "Gartenkooperative Süri.."
+ORGANISATION_LONG_NAME = "der Genossenschaft Süri"
 ORGANISATION_ADDRESS = {"name":"Gartenkooperative Süri...", 
             "street" : "Süri",
             "number" : "54",
