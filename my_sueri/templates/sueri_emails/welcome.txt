@@ -1,0 +1,38 @@
+{% extends "mails/email.txt" %}
+{% load config %}
+{% block content %}
+{% config "billing" as billing%}
+Wir freuen uns, dich bei der Genossenschaft Süri zu begrüssen. 
+
+Wir sind eine solidarische Landwirtschaftsinitiative und bauen gemeinsam mit unseren Genossenschaftsmitgliedern knackiges Biogemüse im Weiler Süri bei Rosshäusern an. 
+Jedes Mitglied der Genossenschaft kauft mindestens einen Anteilschein à 250 Franken. Damit finanziert die Genossenschaft Süri die Infrastruktur. Somit bist du MiteigentümerIn des Gemüsebetriebs und kannst bei vielen Entscheidungen mitbestimmen. Bei Austritt aus der Genossenschaft bekommst du deinen Anteilschein zurück erstattet.
+
+Bitte zahle den Betrag für den/die Anteilschein/e auf das folgende Konto ein:
+         
+        Genossenschaft Süri
+        Süri 54 
+        3204 Rosshäusern 
+         
+        PostFinance 
+        Postkonto-Nummer: 61-227619-9 
+        IBAN: CH04 0900 0000 6122 7619 9 
+        BIC: POFICHBEXXX 
+     
+Schau dich im Mitgliederbereich auf http://my.sueri.org/my/home um.  Dort findest du deine Abo-Übersicht und verwaltest deine Tätigkeitsbereiche, Einsätze und Personalien.
+
+{% if password is not None %}
+Email: {{ username }}
+Passwort: {{ password }}
+Bitte setze dir hier gleich ein neues Passwort:
+{{serverurl}}/my/password
+
+Damit wir dich als Mitglied freischalten können nutze den Bestätigungslink um deine Email zu bestätigen.
+Bestätigungslink: {{ serverurl }}/my/confirm/{{ hash }}
+{% endif %}
+
+Für weitere Fragen schaust du in den FAQ (http://{% config "server_url" %}{% config "faq_doc" %}) nach oder schreibst eine Mail an {% config "info_email" %}.
+
+Bis bald und liebe Grüsse die {% config "organisation_name" %}-Betriebsgruppe
+
+
+{% endblock %}
