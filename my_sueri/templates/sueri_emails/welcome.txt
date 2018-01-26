@@ -30,7 +30,7 @@ Damit wir dich als Mitglied freischalten können nutze den Bestätigungslink um 
 Bestätigungslink: {{ serverurl }}/my/confirm/{{ hash }}
 {% endif %}
 
-Für weitere Fragen schaust du in den FAQ (http://{% config "server_url" %}{% config "faq_doc" %}) nach oder schreibst eine Mail an {% config "info_email" %}.
+Für weitere Fragen schaust du in den FAQ ({% config "faq_doc" %}) nach oder schreibst eine Mail an {% config "info_email" %}.
 
 Bis bald und liebe Grüsse die {% config "organisation_name" %}-Betriebsgruppe
 
