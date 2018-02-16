@@ -71,6 +71,11 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'my_sueri.wsgi.application'
 
+ADMINS = (
+    ('Admin', os.environ.get('JUNTAGRICO_ADMIN_EMAIL')),
+)
+MANAGERS = ADMINS
+SERVER_EMAIL="server@sueri.org"
 
 LANGUAGE_CODE = 'de_CH'
 
@@ -92,13 +97,14 @@ AUTHENTICATION_BACKENDS = (
 )
 
 
-MIDDLEWARE_CLASSES = (
+MIDDLEWARE = [
     'django.middleware.common.CommonMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
-)
+    'impersonate.middleware.ImpersonateMiddleware'
+]
 
 EMAIL_HOST = os.environ.get('JUNTAGRICO_EMAIL_HOST')
 EMAIL_HOST_USER = os.environ.get('JUNTAGRICO_EMAIL_USER')
