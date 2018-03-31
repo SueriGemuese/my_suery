@@ -173,7 +173,7 @@ INFO_EMAIL = "info@sueri.org"
 SERVER_URL = "sueri.org"
 ADMINPORTAL_NAME = "my.süri"
 ADMINPORTAL_SERVER_URL = "my.sueri.org"
-BUSINESS_REGULATIONS = "http://sueri.org/images/Download/180125_Betriebsreglement_Sueri.pdf"
+_REGULATIONS = "http://sueri.org/images/Download/180125_Betriebsreglement_Sueri.pdf"
 BYLAWS = "http://sueri.org/images/Download/171127_Statuten_Sueri.pdf"
 STYLE_SHEET = "/static/css/personal.css"
 BOOTSTRAP = "/static/external/bootstrap-3.3.1/css/bootstrap.min.css"
@@ -188,7 +188,7 @@ DEPOT_LIST_COVER_SHEETS = 'x'
 DEPOT_LIST_OVERVIEWS = 'x'
 DEPOT_LIST_GENERATION_DAYS = [1,2,3,4,5,6,7]	
 BILLING = False
-BUSINESS_YEAR_START = {"day":1, "month":1}
+BUSINESS_YEAR_START = {"day":1, "month":6}
 BUSINESS_YEAR_CANCELATION_MONTH = 10
 IMAGES = {'status_100': '/static/img/status_100.png',
             'status_75': '/static/img/status_75.png',
