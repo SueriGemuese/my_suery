@@ -18,19 +18,20 @@ Bitte zahle den Betrag für den/die Anteilschein/e auf das folgende Konto ein:
         IBAN: CH04 0900 0000 6122 7619 9 
         BIC: POFICHBEXXX 
      
-Schau dich im Mitgliederbereich auf http://my.sueri.org/my/home um.  Dort findest du deine Abo-Übersicht und verwaltest deine Tätigkeitsbereiche, Einsätze und Personalien.
+Melde dich mit den untenstehenden Angaben im Mitgliederbereich auf http://my.sueri.org/my/home an. Dort findest du deine Abo-Übersicht und verwaltest deine Tätigkeitsbereiche, Einsätze und Personalien.
 
 {% if password is not None %}
 Email: {{ username }}
 Passwort: {{ password }}
-Bitte setze dir hier gleich ein neues Passwort:
+
+Setze dir bitte anschliessend gleich ein neues Passwort:
 {{serverurl}}/my/password
 
-Damit wir dich als Mitglied freischalten können nutze den Bestätigungslink um deine Email zu bestätigen.
+Klicke bitte auf den folgenden Bestätigungslink, um deine Emailadresse zu bestätigen und damit wir dich als Mitglied freischalten können.
 Bestätigungslink: {{ serverurl }}/my/confirm/{{ hash }}
 {% endif %}
 
-Für weitere Fragen schaust du in den FAQ ({% config "faq_doc" %}) nach oder schreibst eine Mail an {% config "info_email" %}.
+Für weitere Fragen schaust du in den FAQ nach ({% config "faq_doc" %}) oder schreibst eine Mail an {% config "info_email" %}.
 
 Bis bald und liebe Grüsse die {% config "organisation_name" %}-Betriebsgruppe
 
