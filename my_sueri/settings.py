@@ -188,7 +188,7 @@ DEPOT_LIST_COVER_SHEETS = 'x'
 DEPOT_LIST_OVERVIEWS = 'x'
 DEPOT_LIST_GENERATION_DAYS = [1,2,3,4,5,6,7]	
 BILLING = False
-BUSINESS_YEAR_START = {"day":1, "month":6}
+BUSINESS_YEAR_START = {"day":24, "month":5}
 BUSINESS_YEAR_CANCELATION_MONTH = 9
 IMAGES = {'status_100': '/static/img/status_100.png',
             'status_75': '/static/img/status_75.png',
