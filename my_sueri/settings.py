@@ -175,7 +175,7 @@ ADMINPORTAL_NAME = "my.süri"
 ADMINPORTAL_SERVER_URL = "my.sueri.org"
 _REGULATIONS = "http://sueri.org/images/Download/180125_Betriebsreglement_Sueri.pdf"
 BYLAWS = "http://sueri.org/images/Download/171127_Statuten_Sueri.pdf"
-STYLE_SHEET = "/static/css/personal.css"
+STYLE_SHEET = "/static/gm/css/personal.css"
 BOOTSTRAP = "/static/external/bootstrap-3.3.1/css/bootstrap.min.css"
 FAVICON = "/static/img/favicono.ico"
 FAQ_DOC = "http://sueri.org/images/Download/FAQ_Sueri.pdf"
@@ -198,7 +198,7 @@ IMAGES = {'status_100': '/static/img/status_100.png',
             'single_full': '/static/img/single_full.png',
             'single_empty': '/static/img/single_empty.png',
             'single_core': '/static/img/single_core.png',
-            'core': '/static/img/core.png'
+            'core': '/static/gm/img/core.png'
 }
 EMAILS = {
     'welcome': 'sueri_emails/welcome.txt',
