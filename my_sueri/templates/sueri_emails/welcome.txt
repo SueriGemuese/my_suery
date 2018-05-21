@@ -22,7 +22,7 @@ Klicke bitte auf den folgenden Bestätigungslink, um deine Emailadresse zu best�
 Bestätigungslink: {{ serverurl }}/my/confirm/{{ hash }}
 {% endif %}
 
-Sooo, jetzt nur noch unter „Mitarbeit“ deine zwei Kernbereiche in denen du tätig sein möchtest erfassen....et voilà, dein Konto ist fertig eingerichtet.
+Sooo, jetzt nur noch unter „Mitarbeit“ deine **zwei Tätigkeitsbereiche** erfassen (mind. einer davon zwingend aus den Kernbereichen Ernten, Abpacken, Ausliefern), in denen du tätig sein möchtest....et voilà, dein Konto ist fertig eingerichtet.
 
 Für weitere Fragen schaust du in den FAQ nach ({% config "faq_doc" %}) oder schreibst eine Mail an {% config "info_email" %}.
 
