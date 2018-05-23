@@ -138,19 +138,15 @@ IMPERSONATE = {
 
 LOGIN_REDIRECT_URL = "/my/home"
 
-DEFAULT_FILE_STORAGE = 'my_sueri.utils.MediaS3BotoStorage'
+DEFAULT_FILE_STORAGE = 'storages.backends.dropbox.DropBoxStorage'
 try:
-    AWS_ACCESS_KEY_ID = os.environ['JUNTAGRICO_AWS_KEY_ID']
-    AWS_SECRET_ACCESS_KEY = os.environ['JUNTAGRICO_AWS_KEY']
-    AWS_STORAGE_BUCKET_NAME = os.environ['JUNTAGRICO_AWS_BUCKET_NAME']
+    DROPBOX_OAUTH2_TOKEN = os.environ['JUNTAGRICO_DROPBOX_TOKEN']
 except KeyError:
-    raise KeyError('Need to define AWS environment variables: ' +
-                   'JUNTAGRICO_AWS_KEY_ID, JUNTAGRICO_AWS_KEY, and JUNTAGRICO_AWS_BUCKET_NAME')
+    raise KeyError('Need to define Dropbox environment variables: ' +
+                   'JUNTAGRICO_DROPBOX_TOKEN')
 
 # Default Django Storage API behavior - don't overwrite files with same name
-AWS_S3_FILE_OVERWRITE = False
 MEDIA_ROOT = 'media'
-MEDIA_URL = 'https://%s.s3.amazonaws.com/' % AWS_STORAGE_BUCKET_NAME
 
 MEMBER_STRING = "Mitglied"
 MEMBERS_STRING = "Mitglieder"
