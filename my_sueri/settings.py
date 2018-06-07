@@ -141,6 +141,7 @@ LOGIN_REDIRECT_URL = "/my/home"
 DEFAULT_FILE_STORAGE = 'storages.backends.dropbox.DropBoxStorage'
 try:
     DROPBOX_OAUTH2_TOKEN = os.environ['JUNTAGRICO_DROPBOX_TOKEN']
+    DROPBOX_ROOT_PATH = os.environ['JUNTAGRICO_DROPBOX_ROOT_PATH']
 except KeyError:
     raise KeyError('Need to define Dropbox environment variables: ' +
                    'JUNTAGRICO_DROPBOX_TOKEN')
