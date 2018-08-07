@@ -1,4 +1,4 @@
-git+http://github.com/juntagrico/juntagrico.git
+juntagrico==1.1.5
 boto==2.48.0
 gunicorn==19.7.1
 psycopg2>2.5.1
